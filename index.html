@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="css/try.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="fb-like pull-right" data-href="https://www.facebook.com/topazgalerialazienek/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+    <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="logoNew2.png"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="html/Onas.html">O nas</a></li>
+                <li><a href="html/Oferta.html">Oferta</a></li>
+                <li><a href="html/Galeria.html">Galeria wnętrz</a></li>
+                <li><a href="html/Współpraca.html">Współpraca</a></li>
+                <li><a href="html/Kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Zapraszamy do Galerii Topaz!</h1>
+        <p>Wyposaż swoją łazienkę razem z nami.</p>
+    </div>
+</div>
+<!-- Container (About Section) -->
+<div class="about">
+    <div id="about" class="container">
+        <div class="row">
+            <div >
+                <h2>O nas</h2><br>
+                <p id="header">W naszym salonie znajdą Państwo bogatą i ciekawą ofertę płytek ceramicznych, mozaik, ceramiki sanitarnej,mebli łazienkowych, kabin prysznicowych, wanien, armatury, luster, akcesoriów łazienkowych,
+                    fug epoksydowych oraz artykułów dekoracyjnych.</p><br>
+                <button class="btn btn-default">Więcej..</button><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+<div  class="neighborhood-guides">
+    <div class="container">
+        <h2>Asortyment</h2><br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="topaz_images/Glazury.jpg">
+                </div>
+                <div class="thumbnail">
+                    <img src="topaz_images/Gres.jpg">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="topaz_images/Wposażenie_łazienek.jpg">
+                </div>
+                <div class="thumbnail">
+                    <img src="topaz_images/Dodatki.jpg">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img class="images" src="topaz_images/Lustra.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="learn-more">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Gwarancja jakości</h3>
+                <p>Oferujemy modne, wysokiej jakości produkty, które szczerze polecamy.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Szeroki wybór</h3>
+                <p>Oferowane przez nas produkty pochodzą z najlepszych europejskich fabryk z krajów takich jak Włochy, Hiszpania, Portugalia, Niemcy, a także w Polska</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Światowe trendy</h3>
+                <p>Pozostajemy na bieżąco ze światowymi trendami i stale poszerzamy swoją ofertę. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <h5>Topaz Galeria Łazienek.ul.Przędzalniana 60.tel. 85 664 03 44. Kom. . E—mail</h5>
+        </div>
+    </div>
+</div>
+<div id="fb-root"></div>
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function() {
+            $(".slideanim").each(function(){
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+<script src="javascript/webpage.js"></script>
+</body>
+</html>

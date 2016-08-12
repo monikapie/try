@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/try.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap-social.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="fb-like pull-right" data-href="https://www.facebook.com/topazgalerialazienek/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+    <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html"><img class="logo" src="../logoNew2.png"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="Onas.html">O nas</a></li>
+                <li><a href="Oferta.html">Oferta</a></li>
+                <li><a href="Galeria.html">Galeria łazienek</a></li>
+                <li><a href="Współpraca.html">Współpraca</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+<div id="line">
+</div>
+<div id="contact" >
+    <div class="container">
+        <div class="about" id="onas about-extend"><h2>Kontakt</h2></div>
+        <br>
+        <div class="row">
+            <div class="col-sm-3">
+                <p class="contact_subtitle">Dane kontaktowe:</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Topaz Galeria Łazienek, Przędzalniana 60</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +85 664 03 44</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> poczta@skleptopaz.pl</p><br>
+                <div>
+                    <a class="btn btn-social-icon btn-facebook" href="https://goo.gl/YNHqsI">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-instagram">
+                        <span class="fa fa-instagram"></span>
+                    </a>
+                </div>
+                <br>
+            </div>
+            <div class="col-sm-2">
+                <p class="contact_subtitle">Godziny otwarcia:</p>
+                <p><span class="glyphicon"></span>poniedziałek: 10:00 - 19:00</p>
+                <p><span class="glyphicon"></span>wtorek: 10:00 - 18:00</p>
+                <p><span class="glyphicon"></span>środa - piątek: 10:00 - 18:00</p>
+                <p><span class="glyphicon"></span>sobota: 10:00 - 15:00</p>
+            </div>
+            <div class="col-sm-7 slideanim">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+            <div id="googleMap" style="height:400px;width:100%;"></div>
+        </div>
+    </div>
+</div>
+<script>var myCenter = new google.maps.LatLng(53.159376, 23.076656);
+
+function initialize() {
+    var mapProp = {
+        center:myCenter,
+        zoom:13,
+        scrollwheel:false,
+        draggable:false,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+    var marker = new google.maps.Marker({
+        position:myCenter,
+    });
+
+    marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);</script>
+<script src="../javascript/webpage.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEN4nEfmQR8yTY1WJ18Gtn_JlXWqWqmGk&callback=initMap" async defer></script>
+</body>
+</html>

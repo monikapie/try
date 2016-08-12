@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster|Josefin+Sans|Pacifico|Dancing+Script|Josefin+Slab|Poiret+One|Yellowtail|Kaushan+Script|Old+Standard+TT:400,400italic|Great+Vibes|Playball|Tangerine|Alex+Brush|Calligraffitti|Pompiere|Gilda+Display&subset=latin,cyrillic);
+.navbar {
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-family: 'Segoe UI Light', serif;
+    font-size: 15px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #000 !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: darkgray !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #000 !important;
+}
+.logo {
+    width: 50%;
+}
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+.about {
+    background-color: #f7f7f7;
+    font-family: 'Segoe UI Light', serif;
+    text-align: center;
+}
+#header {
+    font-size: 20px;
+}
+#about-extend {
+    text-align: left;
+}
+#about-extend #onas{
+    text-align: center;
+}
+#about-extend .row p {
+    font-size: 115%;
+ }
+#line {
+    background-color: #efefef;
+    background-position: center;
+    height: 50px;
+}
+
+.about h2 {
+    color: #393c3d;
+    font-size: 40px;
+    font-family: 'Old Standard TT', serif;
+    font-style: italic;
+}
+
+#details {
+    margin-bottom: 5%;
+}
+
+#contact {
+    font-family: 'Segoe UI Light', serif;
+    background-color: #f7f7f7;
+}
+
+.jumbotron {
+    background-image:url("../topaz_images/Łazienka.JPG");
+    background-position: center;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .container {
+    background: rgba(255, 255, 255, 0.50);
+    border-radius: 3px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top:100px;
+}
+
+.jumbotron h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Old Standard TT', serif;
+    font-style: italic;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.jumbotron p {
+    font-size: 25px;
+    font-family: 'Segoe UI Light', serif;
+    text-align: center;
+    color: #fff;
+}
+
+.jumbotron a {
+    font-size: 18px;
+    font-family: 'Segoe UI Light', serif;
+}
+
+.learn-more {
+    background-color: #f7f7f7;
+    font-family: 'Segoe UI Light', serif;
+}
+
+.learn-more h3 {
+    color: #393c3d;
+    font-family: 'Old Standard TT', serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+* {
+    box-sizing: border-box;
+}
+/*------------------*/
+.neighborhood-guides {
+    background-color: #efefef;
+    font-family: 'Segoe UI Light', serif ;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.neighborhood-guides h2{
+    color: #393c3d;
+    font-family: 'Old Standard TT', serif;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+}
+
+.neighborhood-guides p{
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.neighborhood-guides .images {
+    height: 94%;
+    width: 94%;
+}
+
+.footer {
+    background-color: #efefef;
+    font-family: 'Segoe UI Light', serif ;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.footer h5, h6 {
+    text-align: center;
+}
+
+#kontakt {
+    font-size: 40px;
+    font-family: 'Old Standard TT', serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.contact_subtitle {
+    font-family: 'Old Standard TT', serif;
+    font-style: italic;
+    font-size: 120%;
+}
+
+body {
+    background-color: #efefef;
+}
